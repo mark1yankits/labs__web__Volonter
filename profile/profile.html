@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="/icon/heart.png">
+    <link rel="stylesheet" href="/profile/profileStyle.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper__container">
+            <div class="wrapper__container__navigation">
+                <div class="title__wrapper">
+                    <a class="logo__text" href="/index.html">
+                        <p>Разом для змін</p>
+                        <img src="/icon/heart.png" alt="">
+                    </a>
+                </div>
+                <div class="wrapper__nav">
+                    <a class="nav__text active" href="/index.html">Про нас</a>
+                    <a class="nav__text" href="/initiatives/initiatives.html">Ініціативи</a>
+                    <a class="nav__text" href="/about-us/about-us.html">Моя Участь</a>
+    
+                    <a href="/profile/profile.html" class="account-container active">
+                        <img class="icon__logo" src="/icon/account-icon.png" alt="">
+                        <p class="text__username">Кіц Маркіян</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="main__container__profile">
+            <div class="avatarLogo__text">
+                <div class="photo__container">
+                    <div class="container__avatarLogo"></div>
+                    <img  class="avatar__profile" src="/icon/avatar.png" alt="">
+                    <button class="shape__container">
+                        <img class="shape__imgProfile" src="/icon/Shape.png" alt="">
+                    </button>
+            </div>
+            <div class="text__avatar">
+                <p>Допустимі формати: jpg, png <br>Максимальна вага файлу: 1 мб</p>
+            </div>
+            </div>
+            <div class="form__profile">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ім'я:</label>
+                        <input type="text" id="name" name="name" placeholder="Ім'я" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="surname">Прізвище:</label>
+                        <input type="text" id="surname" name="surname" placeholder="Прізвище" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="phone">Номер телефону:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="номер телефону" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="contact-method">Бажаний спосіб контакту:</label>
+                        <select id="contact-method" name="contact-method" required>
+                            <option value="phone">Телефонний дзвінок</option>
+                            <option value="email">Email</option>
+                            <option value="messenger">Месенджер (Viber, Telegram)</option>
+                        </select>
+                    </div>
+        
+                </form>
+                <button class="btn__submit" type="submit">Надіслати</button>
+            </div>
+            
+        </div>
+    </main>
+
+
+    <footer>
+        <hr class="hr__footer">
+        <div class="footer__container">
+            <div class="footer__icon-container">
+                <p class="icon__text">
+                    Разом для змін
+                    <img src="/icon/heart.png" alt="">
+                </p>
+                <p class="TextProcessor">БО «Разом для змін» © 2025. Всі права захищено.</p>
+            </div>
+            <div class="footer__inf">
+                <p class="title__footer__Inf">Підтримайте нашу місію!</p>
+                <p class="text__footer__Inf">
+                    Ваш внесок – це можливість зробити добру справу та допомогти тим, хто цього потребує. Кожна гривня має значення! 
+                    <br><br>
+                    Проскануйте 
+                    QR-код праворуч, щоб зробити безпечний та швидкий донат. Ваша підтримка – це надія та допомога для багатьох людей.
+                </p>
+            </div>
+            <div class="qr__code__container">
+                <img src="/img/Vector.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

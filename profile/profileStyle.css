@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-transform: capitalize;
+    font-family: 'Manrope', sans-serif;
+    background: transparent;
+}
+body {
+    background-color: #1F2022;
+}
+
+
+
+
+
+/* ---------------------------- */
+/*            Header            */
+/* ---------------------------- */
+
+
+.wrapper__container__navigation{
+    display: flex;
+    justify-content: space-between;
+
+
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    
+    margin: 0 8%;
+}
+
+.wrapper__container{
+    background: #2C2D31;
+    border-bottom: 2px solid var(--, #3C3D42);
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+.logo__text{
+    display: flex;
+    gap: 1.3rem;
+}
+
+.account-container{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    gap: 1.3rem;
+}
+
+.wrapper__nav{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.icon__logo{
+    width: 24px;
+    height: auto;
+}
+
+/* nav text */
+
+.nav__text{
+    color: #858B95;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.nav__text.active{
+    color: #1EA5E7;
+}
+.nav__text:hover{
+    color: #1EA5E7;
+}
+.logo__text p{
+    color: #858B95;
+}
+.account-container a{
+    color: #858B95;
+}
+
+
+.text__username{
+    color: #E1E1E1;
+    font-size: 18px;
+}
+.account-container.active .text__username{
+    color: #1EA5E7;
+}
+
+
+/* main */
+
+
+.main__container__profile{
+    box-shadow: 3px 3px 20px #656873;
+    overflow: hidden; /* Обрізає зайве */
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5rem;
+}
+
+.avatarLogo__text{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.photo__container{
+    position: relative;
+    display: inline-block;
+    margin-left: 3rem;
+}
+.avatar__profile img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.shape__container{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    background-color: #3C3D42;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.text__avatar p{
+    color: #858B95;
+}
+
+
+.contact-form {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    color: #858B95;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.form-group input ,select{
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid  #3C3D42;
+    background: #2C2D31;
+    padding: 10px;
+    align-items: center;
+}
+
+.form-group select {
+    color: #858B95;
+}
+
+.name__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn__submit {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    padding: 15px 50px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+
+
+
+    border-radius: 20px;
+    border: 1px solid #1EA5E7;
+    background: #1EA5E7;
+
+    box-shadow: 0px 0px 40px 25px rgba(30, 165, 231, 0.15);
+    margin-bottom: 2rem;
+}
+
+
+/* ---------------------------- */
+/*            Footer            */
+/* ---------------------------- */
+
+
+
+
+
+footer{
+    margin: 0 8%;
+}
+
+.hr__footer{
+    border-top: 2px solid #3C3D42;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+.footer__container{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+/* icon container */
+
+.icon__text{
+    display: flex;
+    white-space: nowrap;
+    margin-right: 2rem;
+    color: #858B95;
+    align-items: center;
+    gap: 1rem;
+}
+.TextProcessor{
+    margin-top: 0.5rem;
+    color: #858B95;
+    margin-right: 2rem;
+}
+/*  */
+
+.title__footer__Inf{
+    color: #E1E1E1;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+.text__footer__Inf{
+    color: #B8B8B8;
+}
+/* Qr_code */
+.qr__code__container{
+    margin-left: 2rem;
+}
