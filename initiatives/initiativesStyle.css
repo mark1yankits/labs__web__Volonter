@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-transform: capitalize;
+    font-family: 'Manrope', sans-serif;
+    background: transparent;
+}
+body {
+    background-color: #1F2022;
+}
+
+/* ---------------------------- */
+/*            Header            */
+/* ---------------------------- */
+
+.wrapper__container__navigation{
+    display: flex;
+    justify-content: space-between;
+
+
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0 8%;
+}
+
+.wrapper__container{
+    background: #2C2D31;
+    border-bottom: 2px solid var(--, #3C3D42);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+.logo__text{
+    display: flex;
+    gap: 1.3rem;
+}
+
+.account-container{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    gap: 1.3rem;
+}
+
+.wrapper__nav{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.icon__logo{
+    width: 24px;
+    height: auto;
+}
+
+/* nav text */
+
+.nav__text{
+    color: #858B95;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.nav__text.active{
+    color: #1EA5E7;
+}
+.nav__text:hover{
+    color: #1EA5E7;
+}
+.logo__text p{
+    color: #858B95;
+}
+.account-container a{
+    color: #858B95;
+}
+
+/*  */
+
+
+.main__container{
+    margin: 0 8%;
+    display: flex;
+    align-items: self-start;
+    margin-top: 5rem;
+}
+/* left */
+
+.left__part__filter-container{
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+
+    border-radius: 20px;
+    border: 2px solid #3C3D41;
+
+    position: sticky;
+    top: 10px; 
+
+    margin-right: 4rem;
+    white-space: nowrap;
+}
+
+.item__hr{
+    border: 1px solid #3C3D42;
+    width: 100%;
+}
+
+.container__date__filter{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.container__date__filter input {
+    gap: 1rem; 
+    margin-bottom: 10px; 
+    margin-right: 1rem;
+}
+
+.text__username{
+    color: #E1E1E1;
+    font-size: 18px;
+}
+.account-container.active .text__username{
+    color: #1EA5E7;
+}
+
+
+/*  */
+
+.container__location__filter{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.container__location__filter input{
+    gap: 1rem; 
+    margin-bottom: 10px; 
+    margin-right: 1rem;
+}
+
+/* text filter */
+
+.text__filter{
+    margin-bottom: 1rem;
+    color: #E1E1E1;
+
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.container__location__filter label,
+.container__date__filter label {
+    color: #858B95;
+}
+
+.duration-container p,
+.skills__container p{
+    color: #858B95;
+    padding: 0px 20px;
+}
+
+/* right */
+
+.item__intiatives__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+
+.container__item {
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border: 1px solid #3C3D41;
+}
+
+.container__item:hover {
+    transform: translateY(-5px);
+}
+
+.img__item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.inf__item {
+    padding: 15px;
+}
+
+
+@media (max-width: 1000px) {
+    .item__intiatives__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* item element */
+.text__item__container{
+    display: flex;
+    color: #E1E1E1;
+}
+.date__element{
+    color: #1EA5E7;
+}
+.navigation{
+    color: #3C3D41;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+/* ---------------------------- */
+/*            Footer            */
+/* ---------------------------- */
+
+
+
+
+
+footer{
+    margin: 0 8%;
+}
+
+.hr__footer{
+    border-top: 2px solid #3C3D42;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+.footer__container{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+/* icon container */
+
+.icon__text{
+    display: flex;
+    white-space: nowrap;
+    margin-right: 2rem;
+    color: #858B95;
+    align-items: center;
+    gap: 1rem;
+}
+.TextProcessor{
+    margin-top: 0.5rem;
+    color: #858B95;
+    margin-right: 2rem;
+}
+/*  */
+
+.title__footer__Inf{
+    color: #E1E1E1;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+.text__footer__Inf{
+    color: #B8B8B8;
+}
+/* Qr_code */
+.qr__code__container{
+    margin-left: 2rem;
+}
