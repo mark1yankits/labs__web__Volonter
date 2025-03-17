@@ -21,7 +21,22 @@ body {
 /* ---------------------------- */
 /*            Header            */
 /* ---------------------------- */
+.menu-icon {
+    width: 40px;
+    height: 30px;
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
 
+.menu-icon span {
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.3s;
+}
 
 .wrapper__container__navigation{
     display: flex;
@@ -91,6 +106,25 @@ body {
 .account-container.active .text__username{
     color: #1EA5E7;
 }
+
+
+@media (max-width: 830px){
+    .contact-form{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .text__avatar p{
+        display: none;
+    }
+    .avatarLogo__text{
+        justify-content: center;
+    }
+    .wrapper__nav {
+        display: none;
+    }
+    .menu-icon {
+        display: flex; 
+    }
+}
 /* ---------------------------- */
 /*              MAIN            */
 /* ---------------------------- */
@@ -147,7 +181,7 @@ main{
     margin-bottom: 1rem;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 830px) {
     .main__container {
         flex-direction: column;
         text-align: center; 
@@ -209,7 +243,19 @@ main{
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+@media (max-width: 830px){
+    .inf__container{
+        flex-direction: column;
+    }
 
+    .btn__Inf{
+        margin-top: 2rem;
+    }
+    .title__inf{
+        display: flex;
+        justify-content: center;
+    }
+}
 
 .btn__Inf:hover{
     transform: scale(1.04);
@@ -217,7 +263,6 @@ main{
     box-shadow:  0px 0px 50px 25px rgba(30, 165, 231, 0.25);
 }
 .btn__Inf.active{
-  
     box-shadow:  0px 0px 50px 25px rgba(30, 165, 231, 0.25);
     border: 1px solid #1EA5E7;
     background: #0086C8;
@@ -282,4 +327,10 @@ footer{
 /* Qr_code */
 .qr__code__container{
     margin-left: 2rem;
+}
+
+@media (max-width: 830px){
+    .footer__inf{
+        display: none;
+    }
 }
